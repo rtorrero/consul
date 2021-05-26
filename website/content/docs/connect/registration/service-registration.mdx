@@ -384,7 +384,8 @@ to the upstream config for a service:
   }
 ```
 This will cause Envoy to create a socket with the path and mode
-provided, and connect that to service-1
+provided, and connect that to service-1.
+
 The mode field is optional, and if omitted will use the default mode
 for Envoy. This is not applicable for abstract sockets. See
 https://www.envoyproxy.io/docs/envoy/latest/api-v3/config/core/v3/address.proto#envoy-v3-api-msg-config-core-v3-pipe
