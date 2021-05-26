@@ -388,10 +388,11 @@ provided, and connect that to service-1
 The mode field is optional, and if omitted will use the default mode
 for Envoy. This is not applicable for abstract sockets. See
 https://www.envoyproxy.io/docs/envoy/latest/api-v3/config/core/v3/address.proto#envoy-v3-api-msg-config-core-v3-pipe
-for details
-NOTE: These options conflict the local_bind_socket_port and
-local_bind_socket_address options. We can bind to an port or we can
-bind to a socket, but not both.
+for details.
+
+-> These options conflict with the `local_bind_socket_port` and
+`local_bind_socket_address` options. For a given upstream the proxy can bind either to an IP port or
+a Unix socket, but not both.
 
 Similarly to expose a service listening on a Unix Domain socket to the service
 mesh use either the 'socket_path' field in the service definition or the
