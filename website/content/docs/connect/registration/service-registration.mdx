@@ -378,9 +378,9 @@ port, add local_bind_socket_path and optionally local_bind_socket_mode
 to the upstream config for a service:
 ```json
   {
-    destination_name":  "service-1"
-    local_bind_socket_path = "/tmp/socket_service_1"
-    local_bind_socket_mode = "0700" 
+    "destination_name":  "service-1",
+    "local_bind_socket_path": "/tmp/socket_service_1",
+    "local_bind_socket_mode": "0700" 
   }
 ```
 This will cause Envoy to create a socket with the path and mode
