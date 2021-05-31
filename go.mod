@@ -2,9 +2,9 @@ module github.com/hashicorp/consul
 
 go 1.13
 
-replace github.com/hashicorp/consul/api => ./api
+replace github.com/rtorrero/consul/api => ./api
 
-replace github.com/hashicorp/consul/sdk => ./sdk
+replace github.com/rtorrero/consul/sdk => ./sdk
 
 replace launchpad.net/gocheck => github.com/go-check/check v0.0.0-20140225173054-eb6ee6f84d0a
 
@@ -28,8 +28,8 @@ require (
 	github.com/google/go-querystring v1.0.0 // indirect
 	github.com/google/gofuzz v1.2.0
 	github.com/google/tcpproxy v0.0.0-20180808230851-dfa16c61dad2
-	github.com/hashicorp/consul/api v1.8.0
-	github.com/hashicorp/consul/sdk v0.7.0
+	github.com/rtorrero/consul/api v1.8.0
+	github.com/rtorrero/consul/sdk v0.7.0
 	github.com/hashicorp/go-bexpr v0.1.2
 	github.com/hashicorp/go-checkpoint v0.5.0
 	github.com/hashicorp/go-cleanhttp v0.5.1
